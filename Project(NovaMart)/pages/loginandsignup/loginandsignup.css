@@ -1,0 +1,427 @@
+
+/* =========================
+   GLOBAL CSS
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #e5deed;
+    color: #292239;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 6%;
+    background: #211a30;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 29px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.logo span,
+.footer .logo span {
+    color: #bda1ef;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 23px;
+}
+
+.nav-links a {
+    color: #eee8f7;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+    padding: 10px;
+}
+
+.nav-links a:hover {
+    color: #bda1ef;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.login-btn,
+.signup-btn {
+    text-decoration: none;
+    padding: 10px 17px;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+.login-btn {
+    background-color:#bda1ef;
+    color: #211a30;
+}
+.login-btn:hover{
+    color: white;
+    background:#4e327b ;
+}
+.signup-btn {
+    color: #211a30;
+    background: #bda1ef;
+}
+.signup-btn:hover{
+    color: white;
+    background:#4e327b ;
+}
+.container {
+    width: 90%;
+    max-width: 700px;
+}
+
+h2 {
+    text-align: center;
+    color: #292239;
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   HIDE CHECKBOX
+========================= */
+
+#toggle {
+    display: none;
+}
+
+
+/* =========================
+   MAIN CARD
+========================= */
+
+.card {
+    height: 380px;
+    width: 100%;
+
+    position: relative;
+    overflow: hidden;
+
+    border-radius: 15px;
+    background: #211a30;
+
+    box-shadow: 0 10px 25px #211a3030;
+}
+
+
+/* =========================
+   COMMON SCREEN CSS
+========================= */
+
+.screen {
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 25px;
+
+    transition:
+        transform 0.8s ease,
+        opacity 0.8s ease;
+}
+
+
+/* =========================
+   FORM CONTAINER
+========================= */
+
+.form {
+    width: 55%;
+    height: 100%;
+
+    padding: 25px;
+
+    color: #292239;
+    background: #e5deed;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+
+    position: relative;
+}
+
+.form > * {
+    position: relative;
+}
+
+
+/* =========================
+   FORM ELEMENTS
+========================= */
+
+.form h3 {
+    font-size: 24px;
+    color: #292239;
+}
+
+.form input {
+    width: 100%;
+    padding: 12px;
+
+    border: none;
+    border-bottom: 1px solid #aaa;
+
+    background: transparent;
+    outline: none;
+
+    color: #292239;
+    font-size: 14px;
+}
+
+.form input::placeholder {
+    color: #655d70;
+}
+
+.form input:focus {
+    border-bottom: 1px solid #bda1ef;
+}
+
+.form a {
+    color: #7047a8;
+    font-size: 12px;
+    text-decoration: none;
+
+    transition: 0.3s ease;
+}
+
+.form a:hover {
+    color: #4e327b;
+}
+
+.form button {
+    width: 100%;
+
+    background: #7047a8;
+    color: white;
+
+    border: none;
+    padding: 12px;
+
+    border-radius: 6px;
+    cursor: pointer;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    transition: 0.5s ease;
+}
+
+.form button:hover {
+    background: #4e327b;
+    transform: translateY(-5px);
+}
+
+.form p {
+    font-size: 12px;
+    color: #292239;
+}
+
+
+/* =========================
+   SIGN IN / SIGN UP LINKS
+========================= */
+
+.switch-link {
+    color: #7047a8;
+    font-weight: bold;
+    cursor: pointer;
+
+    padding: 2px;
+
+    transition: 0.3s ease;
+}
+
+.switch-link:hover {
+    color: #4e327b;
+    text-decoration: underline;
+}
+
+
+/* =========================
+   WELCOME SECTION
+========================= */
+
+.welcome {
+    width: 40%;
+    color: #ffffff;
+    padding: 15px;
+}
+
+.welcome h1 {
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.welcome p {
+    margin-top: 15px;
+    line-height: 1.5;
+    font-size: 13px;
+    color: #d4cddd;
+}
+
+.welcome h1 span {
+    color: #bda1ef;
+}
+
+
+/* =========================
+   LOGIN SCREEN
+========================= */
+
+.login-screen {
+    opacity: 1;
+    transform: translateX(0);
+
+    z-index: 2;
+    pointer-events: auto;
+}
+
+.login-screen .form {
+    padding-right: 50px;
+    width: 400px;
+    height: 320px;
+
+    border-radius: 10px;
+}
+
+
+/* =========================
+   SIGNUP SCREEN
+========================= */
+
+.signup-screen {
+    opacity: 0;
+    transform: translateX(50px);
+
+    z-index: 1;
+    pointer-events: none;
+}
+
+.signup-screen .form {
+    padding-left: 50px;
+    width: 400px;
+    height: 320px;
+
+    border-radius: 10px;
+}
+
+
+/* =========================
+   CLICK SIGN UP
+========================= */
+
+#toggle:checked + .card .login-screen {
+    opacity: 0;
+    transform: translateX(-50px);
+
+    z-index: 1;
+    pointer-events: none;
+}
+
+#toggle:checked + .card .signup-screen {
+    opacity: 1;
+    transform: translateX(0);
+
+    z-index: 2;
+    pointer-events: auto;
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 650px) {
+
+    .container {
+        width: 95%;
+    }
+
+    .card {
+        height: 350px;
+    }
+
+    .screen {
+        padding: 10px;
+    }
+
+    .form {
+        padding: 12px;
+        gap: 12px;
+    }
+
+    .login-screen .form {
+        padding-right: 25px;
+        width: 55%;
+        height: 320px;
+    }
+
+    .signup-screen .form {
+        padding-left: 25px;
+        width: 55%;
+        height: 320px;
+    }
+
+    .form h3 {
+        font-size: 17px;
+    }
+
+    .form input {
+        font-size: 12px;
+        padding: 9px;
+    }
+
+    .form button {
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .form p {
+        font-size: 10px;
+    }
+
+    .welcome {
+        padding: 8px;
+    }
+
+    .welcome h1 {
+        font-size: 20px;
+    }
+
+    .welcome p {
+        font-size: 11px;
+    }
+}

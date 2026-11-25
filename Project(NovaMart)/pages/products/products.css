@@ -1,0 +1,295 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #e5deed;
+    color: #292239;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px 20px;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 6%;
+    background: #211a30;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 29px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.logo span,
+.footer .logo span {
+    color: #bda1ef;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 23px;
+}
+
+.nav-links a {
+    color: #eee8f7;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+    padding: 10px;
+}
+
+.nav-links a:hover {
+    color: #bda1ef;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.login-btn,
+.signup-btn {
+    text-decoration: none;
+    padding: 10px 17px;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+.login-btn {
+    background-color:#bda1ef;
+    color: #211a30;
+}
+.login-btn:hover{
+    color: white;
+    background:#4e327b ;
+}
+.signup-btn {
+    color: #211a30;
+    background: #bda1ef;
+}
+.signup-btn:hover{
+    color: white;
+    background:#4e327b ;
+}
+
+
+
+
+.category-heading {
+    font-size: 26px;
+    margin: 40px 0 20px;
+    color: #292239;
+    border-left: 5px solid #7047a8;
+    padding-left: 12px;
+}
+
+.preview-btn {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background: #7047a8;
+    color: white;
+    padding: 11px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: .3s ease;
+}
+
+.preview-btn:hover {
+    background: #4e327b;
+    transform: translateY(-3px);
+}
+
+/* HEADING */
+
+.heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.heading h1 {
+    font-size: 36px;
+    color: #292239;
+    margin-bottom: 10px;
+}
+
+.heading p {
+    color: #655d70;
+    font-size: 15px;
+}
+
+
+/* SORT SECTION */
+
+.sort {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 25px;
+}
+
+.sort select {
+    padding: 11px 15px;
+    border: 1px solid #bda1ef;
+    border-radius: 6px;
+    background: #f8f6fb;
+    color: #292239;
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.sort select:focus {
+    border-color: #7047a8;
+}
+
+
+/* PRODUCTS GRID */
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+
+/* PRODUCT CARD */
+
+.product-card {
+    background: #f8f6fb;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 18px #211a3018;
+    transition: 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 15px 30px #211a3030;
+}
+
+
+/* IMAGE BOX */
+
+.image-box {
+    width: 100%;
+    height: 220px;
+    position: relative;
+    overflow: hidden;
+    background: #d3c7e2;
+}
+
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.4s ease;
+}
+
+.product-card:hover .image-box img {
+    transform: scale(1.06);
+}
+
+
+/* BADGES */
+
+.badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+}
+
+.badge.new {
+    background: #7047a8;
+}
+
+.badge.sale {
+    background: #4e327b;
+}
+
+
+/* PRODUCT INFORMATION */
+
+.product-info {
+    padding: 20px;
+}
+
+.product-info h3 {
+    font-size: 17px;
+    color: #292239;
+    margin-bottom: 9px;
+}
+
+.product-info p {
+    color: #655d70;
+    font-size: 13px;
+    margin-bottom: 12px;
+}
+
+.product-info h4 {
+    color: #7047a8;
+    font-size: 17px;
+    margin-bottom: 12px;
+}
+
+.product-info del {
+    color: #93899f;
+    font-size: 12px;
+    font-weight: normal;
+    margin-left: 5px;
+}
+
+
+/* RATING */
+
+.rating {
+    color: #f5a000;
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-bottom: 9px;
+}
+
+.rating small {
+    color: #655d70;
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+
+/* ADD TO CART BUTTON */
+
+.product-info button {
+    width: 100%;
+    padding: 11px;
+    background: #7047a8;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.product-info button:hover {
+    background: #4e327b;
+}
+

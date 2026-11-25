@@ -1,0 +1,280 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e5deed;
+    color: #292239;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 6%;
+    background: #211a30;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 29px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.logo span,
+.footer .logo span {
+    color: #bda1ef;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 23px;
+}
+
+.nav-links a {
+    color: #eee8f7;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+    padding: 10px;
+}
+
+.nav-links a:hover {
+    color: #bda1ef;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.login-btn,
+.signup-btn {
+    text-decoration: none;
+    padding: 10px 17px;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+.login-btn {
+    background-color:#bda1ef;
+    color: #211a30;
+}
+.login-btn:hover{
+    color: white;
+    background:#4e327b ;
+}
+.signup-btn {
+    color: #211a30;
+    background: #bda1ef;
+}
+.signup-btn:hover{
+    color: white;
+    background:#4e327b ;
+}
+/* TOP SECTION */
+
+.top {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.top h2 {
+    font-size: 34px;
+    color: #292239;
+}
+
+.top p {
+    margin-top: 8px;
+    color: #655d70;
+}
+
+/* CONTACT CONTAINER */
+
+.contact-container {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    gap: 25px;
+    padding: 20px;
+}
+
+/* CONTACT FORM - LIGHT THEME */
+
+.form-box {
+    flex: 1;
+    background-color: #e5deed;
+    color: #292239;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 18px #211a3020;
+}
+
+.form-box h3 {
+    margin-bottom: 20px;
+    color: #292239;
+}
+
+label {
+    font-weight: bold;
+    font-size: 14px;
+    color: #292239;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0 15px;
+
+    border: none;
+    border-bottom: 1px solid #aaa;
+    border-radius: 0;
+
+    background: transparent;
+    color: #292239;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    outline: none;
+}
+
+input:focus,
+textarea:focus {
+    border-bottom: 1px solid #7047a8;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #655d70;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* BUTTON */
+
+button {
+    width: 100%;
+    background-color: #7047a8;
+    color: white;
+
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+
+    transition: 0.5s ease;
+}
+
+button:hover {
+    background-color: #4e327b;
+    transform: translateY(-5px);
+}
+
+/* CONTACT INFORMATION - DARK THEME */
+
+.info-box {
+    flex: 1;
+    background-color: #211a30;
+    color: white;
+
+    padding: 30px;
+    border-radius: 12px;
+}
+
+.info-box h3 {
+    color: #bda1ef;
+}
+
+.info-box p {
+    margin: 18px 0;
+    line-height: 1.6;
+    color: #d4cddd;
+}
+
+/* STORE HOURS */
+
+.hours-box {
+    background-color: #292239;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.hours-box h3 {
+    color: #bda1ef;
+}
+
+/* TABLET RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .contact-container {
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .form-box,
+    .info-box {
+        padding: 22px;
+    }
+
+    .top h2 {
+        font-size: 30px;
+    }
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 600px) {
+
+    .top {
+        padding: 30px 15px;
+    }
+
+    .top h2 {
+        font-size: 28px;
+    }
+
+    .top p {
+        font-size: 14px;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        padding: 15px;
+        gap: 20px;
+    }
+
+    .form-box,
+    .info-box {
+        width: 100%;
+        padding: 22px;
+    }
+
+    .form-box h3,
+    .info-box h3 {
+        font-size: 20px;
+    }
+
+    input,
+    textarea {
+        font-size: 13px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}

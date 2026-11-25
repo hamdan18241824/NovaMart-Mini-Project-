@@ -1,0 +1,155 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #e5deed;
+    color: #292239;
+}
+
+.back-btn{
+    padding: 20px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.back-btn>button{
+    transition: 0.5s ease;
+    cursor: pointer;
+    background-color: #7047a8;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    width: 200px;
+    height: 50px;
+    font-size: 1rem;
+}
+.back-btn>button>a{
+    text-decoration: none;
+    color: white;
+}
+.back-btn>button:hover{
+    background-color: #4e327b;
+    transform: translateY(-5px);
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px 20px;
+}
+.heading {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.heading h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.heading p {
+    color: #655d70;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.product-card {
+    background: #f8f6fb;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 18px #211a3018;
+    transition: 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 15px 30px #211a3030;
+}
+
+.image-box {
+    height: 230px;
+    position: relative;
+    overflow: hidden;
+    background: #d3c7e2;
+}
+
+.image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.4s;
+}
+
+.product-card:hover img {
+    transform: scale(1.06);
+}
+
+.badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    padding: 6px 12px;
+    border-radius: 5px;
+    color: white;
+    font-size: 12px;
+}
+
+.new {
+    background: #7047a8;
+}
+
+.product-info {
+    padding: 20px;
+}
+
+.product-info h3 {
+    font-size: 17px;
+    margin-bottom: 9px;
+}
+
+.product-info p {
+    color: #655d70;
+    font-size: 13px;
+    margin-bottom: 12px;
+}
+
+.product-info h4 {
+    color: #7047a8;
+    margin-bottom: 12px;
+}
+
+.rating {
+    color: #f5a000;
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-bottom: 9px;
+}
+
+.rating small {
+    color: #655d70;
+}
+
+.preview-btn {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 11px;
+    background: #7047a8;
+    color: white;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.preview-btn:hover {
+    background: #4e327b;
+}

@@ -1,0 +1,386 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #e5deed;
+    color: #292239;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 6%;
+    background: #211a30;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 29px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.logo span,
+.footer .logo span {
+    color: #bda1ef;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 23px;
+}
+
+.nav-links a {
+    color: #eee8f7;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+    padding: 10px;
+}
+
+.nav-links a:hover {
+    color: #bda1ef;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.login-btn,
+.signup-btn {
+    text-decoration: none;
+    padding: 10px 17px;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+.login-btn {
+    background-color:#bda1ef;
+    color: #211a30;
+}
+.login-btn:hover{
+    color: white;
+    background:#4e327b ;
+}
+.signup-btn {
+    color: #211a30;
+    background: #bda1ef;
+}
+.signup-btn:hover{
+    color: white;
+    background:#4e327b ;
+}
+/* HERO SECTION */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 45px;
+    padding: 75px 8%;
+    background: #d3c7e2;
+}
+
+.hero-content {
+    max-width: 520px;
+}
+
+.eyebrow {
+    color: #7047a8;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.hero-content h1 {
+    color: #292239;
+    font-size: 53px;
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+.hero-content h1 span {
+    color: #7047a8;
+}
+
+.hero-description {
+    color: #5d566b;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 28px;
+}
+
+.main-btn {
+    display: inline-block;
+    padding: 14px 26px;
+    background: #7047a8;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.main-btn:hover {
+    background: #4e327b;
+    transform: translateY(-5px);
+}
+
+.hero-image {
+    width: 48%;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px #211a3030;
+}
+
+/* COMMON SECTIONS */
+.section {
+    padding: 75px 7%;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 38px;
+}
+
+.section-heading h2 {
+    color: #292239;
+    font-size: 34px;
+    margin-bottom: 12px;
+}
+
+.section-heading > p:last-child {
+    color: #655d70;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* CATEGORIES */
+.categories-section {
+    background: #e5deed;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.category-card {
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    background: #211a30;
+}
+
+.category-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.4s;
+}
+
+.category-card:hover img {
+    transform: scale(1.07);
+}
+
+.category-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 45px 20px 20px;
+    color: white;
+    background: linear-gradient(transparent, #171225e8);
+}
+
+.category-info h3 {
+    font-size: 21px;
+    margin-bottom: 9px;
+}
+
+.category-info a {
+    color: #d5c1fa;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* PRODUCTS */
+.products-section {
+    background: #d8cde7;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.product-card {
+    background: #f8f6fb;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 18px #211a3018;
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-6px);
+}
+
+.product-card img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 20px;
+}
+
+.product-category {
+    color: #7047a8;
+    font-size: 13px;
+    margin-bottom: 9px;
+}
+
+.product-info h3 {
+    color: #292239;
+    font-size: 17px;
+    margin-bottom: 12px;
+}
+
+.price {
+    color: #7047a8;
+    font-weight: bold;
+    margin-bottom: 17px;
+}
+
+.product-btn {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background: #292239;
+    color: white;
+    padding: 11px;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.product-btn:hover {
+    background: #7047a8;
+}
+
+/* ABOUT */
+.about-section {
+    display: flex;
+    align-items: center;
+    gap: 55px;
+    background: #e5deed;
+}
+
+.about-image,
+.about-content {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+    border-radius: 14px;
+}
+
+.about-content h2 {
+    color: #292239;
+    font-size: 35px;
+    line-height: 1.3;
+    margin-bottom: 18px;
+}
+
+.about-content > p:not(.eyebrow) {
+    color: #5d566b;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+/* CONTACT */
+.contact-section {
+    background: #d8cde7;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.contact-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease;
+}
+.contact-btn>button>a{
+    text-decoration: none;
+    color: white;
+}
+.contact-btn>button{
+    cursor: pointer;
+    text-decoration: none;
+    padding: 10px 17px;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: 0.3s ease;
+    background-color:#4e327b;
+}
+.contact-btn>button:hover{
+    background-color: #38235a;
+    transform: translateY(-5px);
+}
+/* FOOTER */
+.footer {
+    text-align: center;
+    background: #211a30;
+    color: white;
+    padding: 38px 15px;
+}
+
+.footer .logo {
+    display: inline-block;
+    margin-bottom: 12px;
+}
+
+.footer p {
+    color: #d4cddd;
+    font-size: 14px;
+}
+
+.footer .copyright {
+    margin-top: 22px;
+    padding-top: 20px;
+    border-top: 1px solid #514765;
+}
+
